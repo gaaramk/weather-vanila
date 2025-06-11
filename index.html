@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ! desc -->
+    <meta name="description" content="" />
+    <!-- ! logo -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- ! title -->
+    <title>Weather</title>
+
+    <!-- **************************************fonts************************************* -->
+    <!-- **************************************fonts************************************* -->
+
+    <!-- **************************************links************************************* -->
+    <!-- ? fontawosem -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- ? bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- ? main css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- **************************************links************************************* -->
+  </head>
+  <body>
+    <!-- **********************************start navbar********************************* -->
+    <nav class="navbar navbar-expand-lg p-5 bg-transparent">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center logo" href="#">
+          <figure>
+            <img src="./images/logo.png" alt="logo image" class="pe-3" />
+          </figure>
+          <figcaption class="logoInfo">
+            <h1 class="text-capitalize fw-bolder fs-6 text-white">weather</h1>
+            <p class="fw-light logoPrag">tagline goes here</p>
+          </figcaption>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
+            <li class="nav-item">
+              <a
+                class="nav-link ps-5 text-white active"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link ps-5 text-white" href="#">news</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link ps-5 text-white" href="#">live cameras</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link ps-5 text-white" href="#">photos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link ps-5 text-white" href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- **********************************end navbar********************************* -->
+
+    <!-- **********************************start home********************************* -->
+    <section id="home" class="home">
+      <div class="container py-5">
+        <div class="inputs py-5 position-relative">
+          <input
+            type="text"
+            placeholder="find your location..."
+            class="mainInp form-control text-capitalize rounded-pill p-3 border-0"
+          />
+          <button
+            class="find text-capitalize px-5 p-2 rounded-pill position-absolute border-0"
+          >
+            find
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- **********************************end home********************************* -->
+    <section id="items" class="items">
+      <div class="container">
+        <div class="row py-3 position-relative items" id="items">
+          <div class="col-lg-4 item border-0">
+            <div
+              class="date container d-flex justify-content-between align-items-center rounded-top-2"
+            >
+              <p class="toDay text-capitalize m-0 p-1">friday</p>
+              <p class="dateToDay text-capitalize m-0 p-1">5july</p>
+            </div>
+
+            <div class="itemBody rounded-bottom-3">
+              <div class="mainInfo text-capitalize container">
+                <p class="city p-4">cairo</p>
+                <h2 class="temperature fw-bold px-3">35.3<sup>o</sup> C</h2>
+                <img class="iconDay" src="" alt="icon weather" />
+                <p class="px-4 fw-light statusDay">sunny</p>
+              </div>
+
+              <div class="sideInfo container d-flex justify-content-around">
+                <p>
+                  <i class="fa-solid fa-umbrella"></i>
+                  <span class="humidity"></span>
+                  %
+                </p>
+                <p>
+                  <i class="fa-solid fa-wind"></i>
+                  <span class="wind"></span>
+                  kph
+                </p>
+                <p>
+                  <i class="fa-regular fa-compass"></i>
+                  <span class="direct"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 item border-0">
+            <div class="tomorDate text-center rounded-top-2">
+              <p class="text-capitalize m-0 p-1 tomorDay">friday</p>
+            </div>
+
+            <div class="tomorBody rounded-bottom-3">
+              <div class="mainInfo text-capitalize text-center p-3">
+                <img class="iconTomor" src="" alt="icon weather" />
+                <h2 class="fw-bold p-3 fs-5 text-white">
+                  <span class="tomorTemp fw-bold fs-5 text-white">35.3</span>
+                  <sup>o</sup> C
+                </h2>
+                <p class="p-3">
+                  <span class="tomorLilTemp fw-light text-white-50">20.3</span>
+                  <sup class="text-white-50">o</sup>
+                </p>
+                <p class="fw-light status py-2 tomorText">s</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 item border-0">
+            <div class="tomorDate text-center rounded-top-2">
+              <p class="text-capitalize m-0 p-1 nextTomorDay">friday</p>
+            </div>
+
+            <div class="tomorBody rounded-bottom-3">
+              <div class="mainInfo text-capitalize text-center p-3">
+                <img class="iconnextTomor" src="" alt="icon weather" />
+                <h2 class="fw-bold p-3 fs-5 text-white">
+                  <span class="nextTomorTemp fw-bold fs-5 text-white"
+                    >35.3</span
+                  >
+                  <sup>o</sup> C
+                </h2>
+                <p class="p-3">
+                  <span class="nextTomorLilTemp fw-light text-white-50"
+                    >20.3</span
+                  >
+                  <sup class="text-white-50">o</sup>
+                </p>
+                <p class="px-4 fw-light nextTomorostatus p-2">sunny</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- **********************************start footer********************************* -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md-8 inputs position-relative">
+            <div class="inner">
+              <input
+              type="text"
+              placeholder="find your location..."
+              class="mainInp form-control text-capitalize rounded-pill p-3 border-0"
+            />
+            <button
+              class="find text-capitalize px-5 p-2 rounded-pill position-absolute border-0"
+            >
+              find
+            </button>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="inner d-flex justify-content-center">
+              <span
+                class="d-flex align-items-center justify-content-center rounded-circle mx-1"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </span>
+              <span
+                class="d-flex align-items-center justify-content-center rounded-circle mx-1"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </span>
+              <span
+                class="d-flex align-items-center justify-content-center rounded-circle mx-1"
+              >
+                <i class="fa-brands fa-google"></i>
+              </span>
+              <span
+                class="d-flex align-items-center justify-content-center rounded-circle mx-1"
+              >
+                <i class="fa-brands fa-pinterest-p fs-2"></i>
+              </span>
+            </div>
+          </div>
+
+          <p class="text-white pt-4">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- **********************************end footer********************************* -->
+
+    <!--? ***********************************bootstrap************************************ -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- ***********************************main JS************************************** -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

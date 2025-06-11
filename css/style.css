@@ -1,0 +1,109 @@
+:root {
+  --bg-color: #1e202b;
+  --primary-color: #009ad8;
+  --font-color: #fff;
+  --side-color: #bfc1c8;
+  --date-bg-color: #2d303d;
+  --card-body-bg-color: #323544;
+}
+*:focus {
+  outline: none !important;
+}
+*::placeholder {
+  color: var(--side-color) !important;
+}
+body {
+  background-color: var(--bg-color);
+}
+
+/* **********************************start navbar***************************************** */
+.logo .logoPrag {
+  font-size: 10px;
+  color: var(--side-color);
+}
+
+/* **********************************end navbar***************************************** */
+
+/* **********************************start home***************************************** */
+.home {
+  background-image: url(./../images/bg.png);
+  height: 50vh;
+}
+.mainInp {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+.mainInp:focus {
+  outline: none;
+}
+
+.find {
+  color: var(--font-color);
+  background-color: var(--primary-color);
+  top: 55px;
+  right: 10px;
+  z-index: 22;
+}
+
+.items{
+  bottom: 150px;
+}
+.item {
+  color: var(--side-color) !important;
+}
+.item .date {
+  background-color: var(--date-bg-color);
+  font-size: 0.875rem;
+}
+.item .itemBody {
+  background-color: var(--card-body-bg-color);
+}
+.item .itemBody .city{
+    font-size: 1.125rem;
+}
+.item .itemBody .temperature{
+    color: var(--font-color);
+    font-size: 5.625rem;
+}
+.item .itemBody .status{
+    color: var(--primary-color);
+}
+
+
+.tomorDate{
+  background-color: #222530;
+}
+
+.tomorBody{
+  background-color: #262936;
+}
+.tomorBody P{
+  color: var(--primary-color);
+}
+/* **********************************end home***************************************** */
+footer{
+  top: 300px;
+  background-color: #262936;
+}
+footer .find{
+  top: 15%;
+  right: 8%;
+}
+footer span{
+  background-color: var(--bg-color);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+footer span:hover{
+  background-color: var(--primary-color);
+}
+footer span:hover i{
+  color: var(--font-color);
+}
+footer i{
+  color: var(--primary-color);
+}
+
+
+
